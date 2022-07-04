@@ -1,0 +1,141 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "post": "test post for display",
+      "likes": 10,
+      "time": ""
+    },
+    {
+      "title": "a title",
+      "post": "here is another post",
+      "time": "2022-06-27T04:04:54.752Z",
+      "likes": 2,
+      "id": 2
+    },
+    {
+      "title": "post 3",
+      "post": "another long post",
+      "time": "2022-06-27T04:40:06.199Z",
+      "likes": 2,
+      "id": 3
+    },
+    {
+      "title": "tough row",
+      "post": "I had a looong day",
+      "time": "2022-06-27T04:46:26.870Z",
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "title": "jogging day",
+      "post": "i ran a long way",
+      "time": "2022-06-27T04:51:15.963Z",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "title": "hold it",
+      "post": "have patient man",
+      "time": "2022-06-27T04:53:09.458Z",
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "title": "tech problems ",
+      "post": "it now working?",
+      "time": "2022-06-27T04:54:12.268Z",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "title": "big questions ",
+      "post": "where did it began ?",
+      "time": "2022-06-27T04:55:21.282Z",
+      "likes": 1,
+      "id": 8
+    },
+    {
+      "title": "greetings ",
+      "post": "hello there",
+      "time": "2022-06-27T04:57:21.315Z",
+      "likes": 2,
+      "id": 9
+    },
+    {
+      "title": "a test of redux",
+      "post": "does it work?",
+      "time": "2022-06-27T05:08:28.872Z",
+      "likes": 4,
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "fname": "typicode",
+      "lname": "typicode",
+      "email": "typicode@email.com",
+      "password": "xxx11133344",
+      "about": "a person of no interest"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "here_id": 1,
+      "fname": "typicode 2",
+      "email": "typicode2@email.com",
+      "email_from": "typicode@email.com",
+      "title": "here is the title",
+      "message": "a new message from typicode 3",
+      "time": "2022-06-27T04:04:54.752Z"
+    },
+    {
+      "id": 2,
+      "here_id": 1,
+      "fname": "typicode 3",
+      "email": "typicode3@email.com",
+      "title": "here is the title",
+      "message": "a new message from typicode 3",
+      "time": "2022-06-27T04:04:56.752Z"
+    },
+    {
+      "time": "2022-06-28T16:42:22.562Z",
+      "id": 3
+    },
+    {
+      "title": "howdido",
+      "email": "hello@gmail.com",
+      "email_from": "typicode@email.com",
+      "time": "2022-06-28T16:46:36.080Z",
+      "message": "a greet message",
+      "id": 4
+    },
+    {
+      "title": "howdyado",
+      "email": "hell@gmail.com",
+      "email_from": "typicode@email.com",
+      "time": "2022-06-28T16:48:41.185Z",
+      "message": "a greet messagetotoo",
+      "id": 5
+    },
+    {
+      "title": "come around ",
+      "email": "hell@gmail.com",
+      "email_from": "typicode@email.com",
+      "time": "2022-06-28T16:50:00.420Z",
+      "message": "party up",
+      "id": 6
+    }
+  ]
+}
