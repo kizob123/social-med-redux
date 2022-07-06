@@ -19,7 +19,9 @@ let local = {
 }
 if(localStorage.getItem('loggein'))
   local =JSON.parse(localStorage.getItem('loggein'))
+
  let [loggedIn, setLoggedIn] = useState(local)
+ 
  let location = useLocation()
  let navigate = useNavigate()
  
