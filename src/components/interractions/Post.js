@@ -6,6 +6,7 @@ function Post(props) {
 
   const [postState, setPostState]=useState(props.post)
   //console.log(postState);
+  let edit = false
   async function addLikes(likes){
     let c = await editPost(postState.id, postState.title, postState.post,postState.time,likes)
    
@@ -30,10 +31,26 @@ function Post(props) {
 
   }
   return (
-    <div className="post">
+    <>
+    <div className="edit-post" style={{display:edit?'block':'none'}}>
+      <form onSubmit={
+        (e)=>{
+          e.preventDefault()
+
+        }
+      }>
+      <input className="post-title" type={'text'} name = 'title' 
+      placeholder="edit post title" defaultValue={postState.title} />
+      <textarea className="post-post" name="post" 
+      placeholder="edit post body" defaultValue={postState.post}/>
+      <button>update</button>
+      </form>
+    </div>
+    <div className="post" style={{display:edit?'none':'block'}}>
       <img src="" alt="profile pix" className="profile-pix"/>
-      <p className="comment-post">{postState.post}</p><br/>
-      <span className="time"></span>
+      <p className="title-post">{postState.title}</p>
+      <p className="comment-post">{postState.post}</p>
+      <span className="time">{postState.time}</span>
       <button className="like" onClick={
         ()=>{
           let l= postState.likes+1
@@ -49,6 +66,7 @@ function Post(props) {
         }
       }>edit</button>
     </div>
+    </>
   );
 }
 

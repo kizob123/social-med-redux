@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router";
 function Header(props) {
- console.log(props.profile);
+ 
  let onLogin=false
  let location = useLocation()
  let navigate = useNavigate()
- if (location.pathname === '/'){
+ if (location.pathname === '/'||location.pathname==='/register'){
    onLogin=true
  }
  
@@ -17,8 +17,7 @@ function Header(props) {
          <div style={{display:onLogin?'none':'block'}}>
 
          <ul className="far-end-nav">
-             <li><NavLink to={'/home'} className="links">Home</NavLink></li> 
-             <li><NavLink to={'/posts'} className="links">Posts</NavLink></li>
+             <li><NavLink to={'/home'} className="links">Home</NavLink></li>
              <li><NavLink to={'/messages'} className="links">Messages</NavLink></li>
              <li><NavLink to={'/profile'} className="links">Profile</NavLink></li>
              <li style={{cursor:'pointer'}}

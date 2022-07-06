@@ -5,13 +5,8 @@ import { useNavigate, useParams } from 'react-router';
 import { getProfiles } from '../../api/login';
 
 function Login(props1) {
-    console.log('login',props1.login,props1.profile);
-   let [loggedIn, setLoggedIn] = useState({
-       loggedIn: false,
-       email: '',
-       password: ''
-   })
-   console.log(loggedIn);
+   let [loggedIn, setLoggedIn] = useState(props1.profile)
+
   
    let navigate = useNavigate()
    useEffect(() => {

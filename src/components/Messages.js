@@ -3,7 +3,7 @@ import { getMessages } from "../api/getMessages";
 import { useEffect, useState } from "react";
 import { postMessage } from "../api/postMessage";
 function Messages(props) {
-  console.log(props);
+  
 let [messages,setMessages] =useState([]);
  let getMs=async()=>{
  let ms = await getMessages()
@@ -28,11 +28,11 @@ getMs()
             let here_id = props.profile.id
             let fname = props.profile.fname
             let message = e.target[2].value
-            let getNs = 
+            
             postMessage(here_id,fname,email,email_from,title,message).then(res=>{
-              console.log(res)
+              
             }).catch(err=>{
-              console.log(err);
+             
             })
           }
         }>

@@ -1,4 +1,4 @@
-import { Route, Routes, useNavigate } from "react-router";
+import { Route, Routes, useLocation, useNavigate } from "react-router";
 import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -20,19 +20,9 @@ let local = {
 if(localStorage.getItem('loggein'))
   local =JSON.parse(localStorage.getItem('loggein'))
  let [loggedIn, setLoggedIn] = useState(local)
- 
- //console.log(JSON.parse(localStorage.getItem('loggein')));
-
+ let location = useLocation()
  let navigate = useNavigate()
- useEffect(() => {
-   //setLoggedIn(localStorage.getItem('loggein'))
-   if (loggedIn.loggedIn===false){
-     navigate('/')
-    console.log('hellooo');
-   
-    }
-     console.log('useeffect', loggedIn, loggedIn.loggedIn);
- }, [loggedIn, navigate])
+ 
   return (
     <div className="App">
       <Header profile={loggedIn}/>
@@ -42,11 +32,11 @@ if(localStorage.getItem('loggein'))
         }
       }>
         
-      <form className='login' onSubmit={
+      <form className='login' style={{display:location.pathname==='/'?'block':'none'}} onSubmit={
         async (e)=>{
             e.preventDefault()
             let email= e.target[0].value
-            console.log(email);
+           
             let password=e.target[1].value
             let res= await getProfiles(email)
             res.json().then(data=>{
@@ -73,6 +63,43 @@ if(localStorage.getItem('loggein'))
      }>
          <input type={'email'} name='email' placeholder='email' required/>
          <input type={'password'} name='password' placeholder='password' required/>
+         <button>Login</button>
+     </form>
+     <form className = 'register'style={{display: location.pathname === '/' ? 'none' : 'block'}}
+     onSubmit = {
+        async (e)=>{
+            e.preventDefault()
+            let email= e.target[0].value
+           
+            let password=e.target[1].value
+            let res= await getProfiles(email)
+            res.json().then(data=>{
+               if(password.trim() === data[0].password.trim()){
+                   //login(email,password)
+                   setLoggedIn({
+                       loggedIn: true,
+                        password: data[0].password.trim(),
+                        email: data[0].email.trim()
+                   })
+                  let test = {
+                     loggedIn: true,
+                     password: data[0].password.trim(),
+                     email: data[0].email.trim()
+                   }
+                   
+                  localStorage.setItem('loggein',JSON.stringify(test))
+                  navigate('/home')
+               }
+            })  
+
+            
+         }
+     }> 
+          <input type={'text'} name='fname' placeholder='firstname' required/>
+          <input type={'text'} name='text' placeholder='lastname'/>
+         <input type={'email'} name='email' placeholder='email' required/>
+         <input type={'password'} name='password' placeholder='password' required/>
+         <textarea name='about' placeholder='tell us about you...' required/>
          <button>Login</button>
      </form>
       </div>
