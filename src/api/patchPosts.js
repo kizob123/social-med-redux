@@ -1,9 +1,6 @@
-import {
-    git,
-    loc
-} from './url-api'
+import { url } from "./url-api"
 export let editPost = async (id, title, post, time, liked) => {
-    const postData = await fetch(`${git}/posts/${id}`, {
+    const postData = await fetch(`${url}/posts/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8'

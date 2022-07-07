@@ -1,6 +1,6 @@
-import {git, loc} from './url-api'
+import {url} from './url-api'
 export let addPost = async (author,title, post, time, liked) => {
-    const postData = await fetch(`${git}/posts`, {
+    const postData = await fetch(`${url}/posts`, {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset=UTF-8'

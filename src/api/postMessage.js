@@ -1,6 +1,7 @@
+import { url } from "./url-api"
 export let postMessage = async (here_id, fname, email,email_from, title, message) => {
     let time = new Date()
-    const postData = await fetch(`http://localhost:9000/messages`, {
+    const postData = await fetch(`${url}/messages`, {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset=UTF-8'

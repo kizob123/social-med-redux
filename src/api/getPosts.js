@@ -1,12 +1,12 @@
 import {
-    git,
-    loc
+    
+    url
 } from './url-api'
 export let getPosts = async function(id) {
     if(id ===null)
     id=''
-    console.log(git, loc)
-    const postData = await fetch(`${git}/posts/${id}` ,{
+    console.log(url)
+    const postData = await fetch(`${url}/posts/${id}` ,{
         method: 'GET',
         headers: {
             "Accept": "applicaton/json"

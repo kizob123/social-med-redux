@@ -1,10 +1,9 @@
 import {
-    git,
-    loc
+    url
 } from './url-api'
 export let getMessages = async function () {
     
-    const postData = await fetch(`${git}/messages`, {
+    const postData = await fetch(`${url}/messages`, {
         method: 'GET',
         headers: {
             "Accept": "applicaton/json"
