@@ -61,7 +61,7 @@
       "title": "greetings ",
       "post": "hello there",
       "time": "2022-06-27T04:57:21.315Z",
-      "likes": 6,
+      "likes": 7,
       "id": 9
     },
     {
@@ -94,8 +94,8 @@
       "id": 1,
       "here_id": 1,
       "fname": "typicode 2",
-      "email": "typicode2@email.com",
-      "email_from": "typicode@email.com",
+      "email": "typicode@email.com",
+      "email_from": "typicode2@email.com",
       "title": "here is the title",
       "message": "a new message from typicode 3",
       "time": "2022-06-27T04:04:54.752Z"
@@ -104,7 +104,8 @@
       "id": 2,
       "here_id": 1,
       "fname": "typicode 3",
-      "email": "typicode3@email.com",
+      "email": "typicode2@email.com",
+      "email_from":"typicode3@email.com",
       "title": "here is the title",
       "message": "a new message from typicode 3",
       "time": "2022-06-27T04:04:56.752Z"
@@ -123,7 +124,7 @@
     },
     {
       "title": "howdyado",
-      "email": "hell@gmail.com",
+      "email":"typicode@email.com",
       "email_from": "typicode@email.com",
       "time": "2022-06-28T16:48:41.185Z",
       "message": "a greet messagetotoo",

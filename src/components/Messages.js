@@ -3,22 +3,25 @@ import { getMessages } from "../api/getMessages";
 import { useEffect, useState } from "react";
 import { postMessage } from "../api/postMessage";
 import { useLocation, useNavigate } from "react-router";
+import local from "./login/localRef";
+import lc from "./login/localRef";
 function Messages(props) {
-let [loggedIn, setLoggedIn] = useState(props.profile)
-
-let navigate = useNavigate()
-let location = useLocation()
-useEffect(() => {
-  !loggedIn.email && navigate('/')
-
-})
 let [messages,setMessages] =useState([]);
  let getMs=async()=>{
- let ms = await getMessages()
- await ms.json().then((data)=>{
-    let mgs= data.map(d =><Message key={d.id} body={d}/>)
+   await lc().then(data => {
+     console.log('e'+data.email);
+      return data.email
+   }).then(async email=>{
+     console.log('d:+++' + email);
+    let ms = await getMessages(email)
+
+    await ms.json().then((data2)=>{
+      console.log('d:---' + data2);
+    let mgs= data2.map(d =><Message key={d.id} body={d}/>)
     setMessages(mgs)
   })
+   })
+ 
 }
 useEffect(()=>{
 getMs()

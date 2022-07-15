@@ -1,6 +1,6 @@
 {
   "name": "social-med-redux",
-  "homepage": "https://kizob123.github.io/social-med-redux/",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,9 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "npx json-server --watch public/db.json --port=9000",
-    "json-server":"node server.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

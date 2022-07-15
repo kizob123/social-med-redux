@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router";
-function Header(props) {
+import remLc from './login/localRefRem'
+function Header() {
  
  let onLogin=false
  let location = useLocation()
@@ -23,9 +24,11 @@ function Header(props) {
              <li><NavLink to={'/profile'} className="links">Profile</NavLink></li>
              <li style={{cursor:'pointer'}}
                onClick = {
-                 () => {
-                   localStorage.removeItem('loggein')
-                   navigate('/')
+                async () => {
+                  await remLc().then(rem=>{
+                    if(rem)
+                    navigate('/')
+                  })
                  }
                
              }>Sign Out</li>
