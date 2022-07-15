@@ -27,10 +27,13 @@ class Profile extends React.Component {
 render(){
    this.getProf()
   return (
-    <div className="profile">
-     Welcome to your profile: {this.state.profile.fname}
-     <br/>Here are your details: <pre>{`${this.state.profile.email} ${this.state.profile.about}`}</pre>
+  <div className="profile">
+    <div>
+      Welcome to your profile: {this.state.prop.loggedIn&& this.state.profile.fname}
+     <br/>Here are your details: <pre>{`${this.state.prop.loggedIn&&this.state.profile.email} ${this.state.prop.loggedIn&&this.state.profile.about}`}</pre>
     </div>
+      </div> 
+      
   );
 }
 }

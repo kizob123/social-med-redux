@@ -10,7 +10,12 @@ because its a fake sever on github.
 
 if no vscode editor in the cmd run 'npm install'
 if vscode editor in the vscode terminal run 'npm install'
-in the cmd or vscode terminal run 'npm run json-server'
+
+in the cmd or vscode terminal run 'npm i json-server' 
+to install json-server if yu don't have it
+now in the cmd run 'json-server --watch db.json --port 9000' 
+to start the server and use the db.json
+
 wait for theprocessing to complete then
 in the cmd or vscode terminal run .'npm run start'
 

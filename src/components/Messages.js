@@ -2,8 +2,16 @@ import Message from "./interractions/Message";
 import { getMessages } from "../api/getMessages";
 import { useEffect, useState } from "react";
 import { postMessage } from "../api/postMessage";
+import { useLocation, useNavigate } from "react-router";
 function Messages(props) {
-  
+let [loggedIn, setLoggedIn] = useState(props.profile)
+
+let navigate = useNavigate()
+let location = useLocation()
+useEffect(() => {
+  !loggedIn.email && navigate('/')
+
+})
 let [messages,setMessages] =useState([]);
  let getMs=async()=>{
  let ms = await getMessages()

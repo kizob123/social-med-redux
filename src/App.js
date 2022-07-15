@@ -24,7 +24,9 @@ if(localStorage.getItem('loggein'))
  
  let location = useLocation()
  let navigate = useNavigate()
+ console.log(loggedIn);
  
+
   return (
     <div className="App">
       <Header profile={loggedIn}/>
@@ -67,7 +69,7 @@ if(localStorage.getItem('loggein'))
          <input type={'password'} name='password' placeholder='password' required/>
          <button>Login</button>
      </form>
-     <form className = 'register'style={{display: location.pathname === '/' ? 'none' : 'block'}}
+     <form className = 'register'style={{display: location.pathname === '/register' ? 'block' : 'none'}}
      onSubmit = {
         async (e)=>{
             e.preventDefault()

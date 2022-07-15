@@ -54,21 +54,21 @@
       "title": "big questions ",
       "post": "where did it began ?",
       "time": "2022-06-27T04:55:21.282Z",
-      "likes": 1,
+      "likes": 2,
       "id": 8
     },
     {
       "title": "greetings ",
       "post": "hello there",
       "time": "2022-06-27T04:57:21.315Z",
-      "likes": 2,
+      "likes": 6,
       "id": 9
     },
     {
       "title": "a test of redux",
       "post": "does it work?",
       "time": "2022-06-27T05:08:28.872Z",
-      "likes": 4,
+      "likes": 7,
       "id": 10
     }
   ],
