@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.51075208.css",
-    "main.js": "/static/js/main.211da184.js",
-    "index.html": "/index.html",
-    "main.51075208.css.map": "/static/css/main.51075208.css.map",
-    "main.211da184.js.map": "/static/js/main.211da184.js.map"
+    "main.css": "/social-med-redux/static/css/main.51075208.css",
+    "main.js": "/social-med-redux/static/js/main.211da184.js",
+    "index.html": "/social-med-redux/index.html",
+    "main.51075208.css.map": "/social-med-redux/static/css/main.51075208.css.map",
+    "main.211da184.js.map": "/social-med-redux/static/js/main.211da184.js.map"
   },
   "entrypoints": [
     "static/css/main.51075208.css",
