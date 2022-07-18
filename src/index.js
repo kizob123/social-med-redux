@@ -9,14 +9,14 @@ import { BrowserRouter,HashRouter, Route, Routes } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
+  <HashRouter>
   <Provider store = {login}>
     
       <App />
    
     
   </Provider>
-  </BrowserRouter>
+  </HashRouter>
   </React.StrictMode>
 );
 
