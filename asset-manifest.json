@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/social-med-redux/static/css/main.51075208.css",
-    "main.js": "/social-med-redux/static/js/main.cca5ead7.js",
+    "main.css": "/social-med-redux/static/css/main.880cf4a0.css",
+    "main.js": "/social-med-redux/static/js/main.c89690a1.js",
     "index.html": "/social-med-redux/index.html",
-    "main.51075208.css.map": "/social-med-redux/static/css/main.51075208.css.map",
-    "main.cca5ead7.js.map": "/social-med-redux/static/js/main.cca5ead7.js.map"
+    "main.880cf4a0.css.map": "/social-med-redux/static/css/main.880cf4a0.css.map",
+    "main.c89690a1.js.map": "/social-med-redux/static/js/main.c89690a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.51075208.css",
-    "static/js/main.cca5ead7.js"
+    "static/css/main.880cf4a0.css",
+    "static/js/main.c89690a1.js"
   ]
 }
