@@ -6,7 +6,12 @@ in the cmd run 'code .' to open in vscode editor
 if you have internet you can leave as is but if not you can go
 to /api folder and uri.git to uri.loc on line3. 
 note that if you use internet you can't add data 
-because its a fake sever on github.
+because its a fake sever on github. 
+
+Also in the index.js change 
+HashRouter to BrowserRouter. In package.json remove the line
+"homepage":"https://kizob123.github.io/social-med-redux/", 
+
 
 if no vscode editor in the cmd run 'npm install'
 if vscode editor in the vscode terminal run 'npm install'

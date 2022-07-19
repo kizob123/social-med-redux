@@ -11,10 +11,7 @@ root.render(
   <React.StrictMode>
   <HashRouter>
   <Provider store = {login}>
-    
       <App />
-   
-    
   </Provider>
   </HashRouter>
   </React.StrictMode>

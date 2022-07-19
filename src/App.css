@@ -84,6 +84,7 @@
   font-weight: bolder;
   font-family:monospace;
   margin-right: 3px;
+  cursor: pointer;
 }
 .enter-post-placeholder{
   color: #8f949e;

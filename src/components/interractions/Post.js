@@ -6,7 +6,7 @@ function Post(props) {
 
   const [postState, setPostState]=useState(props.post)
   //console.log(postState);
-  let edit = false
+  let [edit,setEdit] =useState(false)
   async function addLikes(likes){
     let c = await editPost(postState.id, postState.title, postState.post,postState.time,likes)
    
@@ -19,13 +19,16 @@ function Post(props) {
     }
     
   }
-  async function editType(post) {
-    let c = await editPost(postState.id, postState.title, post, postState.time, postState.likes)
+  async function editType(title,post) {
+    
+    let c = await editPost(postState.id, title, post, postState.time, postState.likes)
 
     if (c.ok) {
+      setEdit(false)
       let res = await getPosts(postState.id)
       res.json().then(d => {
         setPostState(d)
+        console.log(edit)
       })
     }
 
@@ -36,7 +39,10 @@ function Post(props) {
       <form onSubmit={
         (e)=>{
           e.preventDefault()
-
+          let p = e.target[1].value
+          let t = e.target[0].value
+          console.log(t, p);
+          editType(t, p)
         }
       }>
       <input className="post-title" type={'text'} name = 'title' 
@@ -51,6 +57,8 @@ function Post(props) {
       <p className="title-post">{postState.title}</p>
       <p className="comment-post">{postState.post}</p>
       <span className="time">{postState.time}</span>
+      </div>
+      <div>
       <button className="like" onClick={
         ()=>{
           let l= postState.likes+1
@@ -60,9 +68,7 @@ function Post(props) {
       }>like {postState.likes}</button>
       <button className="edit" onClick={
         ()=>{
-          let s = postState.post
-          console.log(s);
-          editType(s)
+          setEdit(true)
         }
       }>edit</button>
     </div>

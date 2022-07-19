@@ -51,24 +51,24 @@
       "id": 7
     },
     {
-      "title": "big questions ",
-      "post": "where did it began ?",
+      "title": "big questions today",
+      "post": "where did it really began ?",
       "time": "2022-06-27T04:55:21.282Z",
       "likes": 2,
       "id": 8
     },
     {
-      "title": "greetings ",
-      "post": "hello there",
+      "title": "greetings hey!",
+      "post": "hello there hey!",
       "time": "2022-06-27T04:57:21.315Z",
-      "likes": 7,
+      "likes": 8,
       "id": 9
     },
     {
-      "title": "a test of redux",
-      "post": "does it work?",
+      "title": "a test of redux now",
+      "post": "does it work now over there?",
       "time": "2022-06-27T05:08:28.872Z",
-      "likes": 7,
+      "likes": 9,
       "id": 10
     }
   ],
@@ -87,6 +87,30 @@
       "email": "typicode@email.com",
       "password": "xxx11133344",
       "about": "a person of no interest"
+    },
+    {
+      "fname": "Don",
+      "lname": "Bo",
+      "email": "donBo@email.com",
+      "password": "passfortest",
+      "about": "A seller of ropes and tiles",
+      "id": 2
+    },
+    {
+      "fname": "Tony",
+      "lname": "Roads",
+      "email": "roadstony@email.com",
+      "password": "passfortest",
+      "about": "A traveling merchant",
+      "id": 3
+    },
+    {
+      "fname": "Ubecka",
+      "lname": "Quinsi",
+      "email": "ubeckquin@email.com",
+      "password": "passfortest",
+      "about": "A space tech expert",
+      "id": 4
     }
   ],
   "messages": [
@@ -105,7 +129,7 @@
       "here_id": 1,
       "fname": "typicode 3",
       "email": "typicode2@email.com",
-      "email_from":"typicode3@email.com",
+      "email_from": "typicode3@email.com",
       "title": "here is the title",
       "message": "a new message from typicode 3",
       "time": "2022-06-27T04:04:56.752Z"
@@ -124,7 +148,7 @@
     },
     {
       "title": "howdyado",
-      "email":"typicode@email.com",
+      "email": "typicode@email.com",
       "email_from": "typicode@email.com",
       "time": "2022-06-28T16:48:41.185Z",
       "message": "a greet messagetotoo",
