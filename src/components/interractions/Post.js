@@ -58,7 +58,7 @@ function Post(props) {
       <p className="comment-post">{postState.post}</p>
       <span className="time">{postState.time}</span>
       </div>
-      <div>
+     <div style={{display:!edit?"flex":"none"}}>
       <button className="like" onClick={
         ()=>{
           let l= postState.likes+1
@@ -66,12 +66,19 @@ function Post(props) {
           addLikes(l)
         }
       }>like {postState.likes}</button>
-      <button className="edit" onClick={
+      <button className = "edit"
+      style = {
+        {
+          display: JSON.parse(localStorage.getItem('loggein')).email===postState.email ? 'block' : 'none'
+        }
+      }
+      onClick = {
         ()=>{
           setEdit(true)
         }
       }>edit</button>
     </div>
+    <br/>
     </>
   );
 }

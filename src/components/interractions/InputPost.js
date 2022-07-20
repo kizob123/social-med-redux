@@ -32,7 +32,7 @@ function InputPost() {
         let author = profile.fname;
         let time = new Date()
         console.log(post,title,author,time);
-         addPost(author,title,post,time,0)
+         addPost(author, title, post, time, 0, initState.email)
 
       })
       

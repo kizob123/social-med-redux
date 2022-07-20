@@ -6,70 +6,80 @@
       "author": "typicode",
       "post": "test post for display",
       "likes": 10,
-      "time": ""
+      "time": "",
+      "email": "donBo@email.com"
     },
     {
       "title": "a title",
       "post": "here is another post",
       "time": "2022-06-27T04:04:54.752Z",
       "likes": 2,
-      "id": 2
+      "id": 2,
+      "email": "donBo@email.com"
     },
     {
       "title": "post 3",
       "post": "another long post",
       "time": "2022-06-27T04:40:06.199Z",
       "likes": 2,
-      "id": 3
+      "id": 3,
+      "email": "donBo@email.com"
     },
     {
       "title": "tough row",
       "post": "I had a looong day",
       "time": "2022-06-27T04:46:26.870Z",
       "likes": 0,
-      "id": 4
+      "id": 4,
+      "email": "hello@gmail.com"
     },
     {
       "title": "jogging day",
       "post": "i ran a long way",
       "time": "2022-06-27T04:51:15.963Z",
       "likes": 0,
-      "id": 5
+      "id": 5,
+      "email": "hello@gmail.com"
     },
     {
       "title": "hold it",
       "post": "have patient man",
       "time": "2022-06-27T04:53:09.458Z",
       "likes": 0,
-      "id": 6
+      "id": 6,
+      "email": "hello@gmail.com"
     },
     {
       "title": "tech problems ",
       "post": "it now working?",
       "time": "2022-06-27T04:54:12.268Z",
       "likes": 0,
-      "id": 7
+      "id": 7,
+      "email": "typicode@email.com"
     },
     {
       "title": "big questions today",
       "post": "where did it really began ?",
       "time": "2022-06-27T04:55:21.282Z",
       "likes": 2,
-      "id": 8
+      "id": 8,
+      "email": "typicode@email.com"
     },
     {
       "title": "greetings hey!",
       "post": "hello there hey!",
       "time": "2022-06-27T04:57:21.315Z",
       "likes": 8,
-      "id": 9
+      "id": 9,
+      "email": "ubeckquin@email.com"
     },
     {
       "title": "a test of redux now",
       "post": "does it work now over there?",
       "time": "2022-06-27T05:08:28.872Z",
       "likes": 9,
-      "id": 10
+      "id": 10,
+      "email": "ubeckquin@email.com"
     }
   ],
   "comments": [

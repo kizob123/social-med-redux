@@ -1,5 +1,5 @@
 import {url} from './url-api'
-export let addPost = async (author,title, post, time, liked) => {
+export let addPost = async (author,title, post, time, liked,email) => {
     const postData = await fetch(`${url}/posts`, {
         method: 'POST',
         headers: {
@@ -10,7 +10,8 @@ export let addPost = async (author,title, post, time, liked) => {
             title: title,
             post: post,
             time: time,
-            likes: liked
+            likes: liked,
+            email:email
         })
     })
 
